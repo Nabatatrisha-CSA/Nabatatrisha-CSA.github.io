@@ -1,175 +1,144 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trisha Nabata | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Roboto', sans-serif;
-    }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trisha Nabata Portfolio</title>
+  <style>
+    /* General Styles */
+    body {
+      margin: 0;
+      font-family: 'Treasure Map Deadhand', Arial, sans-serif;
+      background: #0b0c10; /* deep space background */
+      color: #fff;
+    }
 
-    body {
-      background-color: #000;
-      color: #fff;
-      line-height: 1.6;
-    }
+    /* Header */
+    header {
+      background: url('https://images.unsplash.com/photo-1581091215366-7ecbf2b1a1f2?auto=format&fit=crop&w=1350&q=80') no-repeat center/cover;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    header h1 {
+      font-size: 3em;
+      text-shadow: 2px 2px 10px #00f;
+    }
+    header p {
+      font-size: 1.2em;
+      text-shadow: 1px 1px 8px #0ff;
+    }
 
-    header {
-      height: 400px;
-      background: url('your-profile.jpg') center/cover no-repeat; /* Your profile picture here */
-      position: relative;
-      color: white;
-    }
+    /* Navigation */
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #1f2833;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 15px 20px;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      background: #45a29e;
+    }
 
-    header div {
-      background-color: rgba(0, 0, 0, 0.6); /* Dark overlay for readability */
-      width: 100%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 20px;
-    }
+    /* Sections */
+    section {
+      padding: 50px 20px;
+      text-align: center;
+    }
 
-    header h1 {
-      font-size: 2.5rem;
-      color: #00BFFF;
-      margin-bottom: 10px;
-    }
+    /* Skills Bars */
+    .skills-bar {
+      background: #333;
+      border-radius: 25px;
+      margin: 10px auto;
+      width: 60%;
+      height: 25px;
+      overflow: hidden;
+    }
+    .skills-fill {
+      background: linear-gradient(to right, #45a29e, #66fcf1);
+      height: 100%;
+      width: 0;
+      text-align: right;
+      padding-right: 10px;
+      color: white;
+      line-height: 25px;
+      transition: width 2s ease;
+    }
 
-    header p {
-      font-size: 1.2rem;
-      color: #ccc;
-    }
-
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      padding: 20px 0;
-      background-color: #222;
-    }
-
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #00BFFF;
-    }
-
-    section {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-
-    section h2 {
-      text-align: center;
-      margin-bottom: 20px;
-      color: #00BFFF;
-    }
-
-    .about, .projects, .contact {
-      margin-bottom: 50px;
-    }
-
-    .projects .project {
-      background-color: #111;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.5);
-    }
-
-    .projects .project h3 {
-      color: #00BFFF;
-    }
-
-    .contact a {
-      display: inline-block;
-      margin: 10px;
-      padding: 10px 20px;
-      background-color: #00BFFF;
-      color: #000;
-      text-decoration: none;
-      border-radius: 5px;
-      transition: background-color 0.3s;
-    }
-
-    .contact a:hover {
-      background-color: #009ACD;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #111;
-      color: #ccc;
-    }
-  </style>
+    /* Footer */
+    footer {
+      background: #1f2833;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Header with profile image background -->
-  <header>
-    <div>
-      <h1>Trisha Nabata</h1>
-      <p>Web Developer | Designer | Tech Enthusiast</p>
-    </div>
-  </header>
+  <!-- Header -->
+  <header id="home">
+    <h1>Trisha Nabata</h1>
+    <p>Exploring the Universe of Web Development 🌌</p>
+  </header>
 
-  <!-- Navigation -->
-  <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <!-- Navigation -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Me</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-  <!-- About Section -->
-  <section id="about" class="about">
-    <h2>About Me</h2>
-    <p>Hello! I'm Trisha Nabata, a passionate web developer who loves creating modern and user-friendly websites. I enjoy turning ideas into interactive digital experiences and constantly learning new technologies.</p>
-  </section>
+  <!-- About Section -->
+  <section id="about">
+    <h2>Galactic Explorer</h2>
+    <p>Hello! I’m Trisha Nabata, a web developer with a passion for coding, creativity, and exploring the endless universe of possibilities online!</p>
+    <img src="https://images.unsplash.com/photo-1529122312420-66f1e37fcd44?auto=format&fit=crop&w=400&q=80" alt="Profile" width="200" style="border-radius: 50%; border: 3px solid #45a29e;">
+  </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="projects">
-    <h2>My Projects</h2>
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>My Cosmic Skills</h2>
+    <p>These are my superpowers in web development</p>
+    <div class="skills-bar"><div class="skills-fill" data-skill="95%">HTML & CSS</div></div>
+    <div class="skills-bar"><div class="skills-fill" data-skill="90%">JavaScript</div></div>
+    <div class="skills-bar"><div class="skills-fill" data-skill="85%">React & Web Design</div></div>
+  </section>
 
-    <div class="project">
-      <h3>Project One</h3>
-      <p>A brief description of your project goes here. You can include the technologies used and the goal of the project.</p>
-    </div>
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:nabatatrisha@gmail.com">nabatatrisha@gmail.com</a></p>
+    <p>“Let’s explore the digital universe together!”</p>
+  </section>
 
-    <div class="project">
-      <h3>Project Two</h3>
-      <p>A brief description of your project goes here. You can include the technologies used and the goal of the project.</p>
-    </div>
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Made with 🌌 Universe Spirit</p>
+  </footer>
 
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <p>Feel free to reach out through any of the platforms below:</p>
-    <a href="mailto:your.email@example.com">Email</a>
-    <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-    <a href="https://www.linkedin.com/in/yourprofile/" target="_blank">LinkedIn</a>
-  </section>
-
-  <footer>
-    &copy; 2026 Trisha Nabata. All rights reserved.
-  </footer>
+  <script>
+    // Animate skill bars on scroll
+    window.addEventListener("scroll", function(){
+      let skills = document.querySelectorAll(".skills-fill");
+      skills.forEach(skill => {
+        let rect = skill.getBoundingClientRect();
+        if(rect.top < window.innerHeight){
+          skill.style.width = skill.getAttribute("data-skill");
+        }
+      });
+    });
+  </script>
 
 </body>
 </html>
