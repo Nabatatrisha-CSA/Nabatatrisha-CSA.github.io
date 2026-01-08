@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -6,7 +6,6 @@
   <title>Trisha Nabata | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    /* Reset & basic styles */
     * {
       margin: 0;
       padding: 0;
@@ -15,25 +14,39 @@
     }
 
     body {
-      background-color: #f5f5f5;
-      color: #333;
+      background-color: #000;
+      color: #fff;
       line-height: 1.6;
     }
 
     header {
-      background-color: #2563EB;
+      height: 400px;
+      background: url('your-profile.jpg') center/cover no-repeat; /* Your profile picture here */
+      position: relative;
       color: white;
+    }
+
+    header div {
+      background-color: rgba(0, 0, 0, 0.6); /* Dark overlay for readability */
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       text-align: center;
-      padding: 60px 20px;
+      padding: 20px;
     }
 
     header h1 {
       font-size: 2.5rem;
+      color: #00BFFF;
       margin-bottom: 10px;
     }
 
     header p {
       font-size: 1.2rem;
+      color: #ccc;
     }
 
     nav {
@@ -41,18 +54,18 @@
       justify-content: center;
       gap: 20px;
       padding: 20px 0;
-      background-color: #1e40af;
+      background-color: #222;
     }
 
     nav a {
-      color: white;
+      color: #fff;
       text-decoration: none;
       font-weight: bold;
       transition: color 0.3s;
     }
 
     nav a:hover {
-      color: #fcd34d;
+      color: #00BFFF;
     }
 
     section {
@@ -64,7 +77,7 @@
     section h2 {
       text-align: center;
       margin-bottom: 20px;
-      color: #2563EB;
+      color: #00BFFF;
     }
 
     .about, .projects, .contact {
@@ -72,42 +85,48 @@
     }
 
     .projects .project {
-      background-color: white;
+      background-color: #111;
       padding: 20px;
       margin-bottom: 20px;
       border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    }
+
+    .projects .project h3 {
+      color: #00BFFF;
     }
 
     .contact a {
       display: inline-block;
       margin: 10px;
       padding: 10px 20px;
-      background-color: #2563EB;
-      color: white;
+      background-color: #00BFFF;
+      color: #000;
       text-decoration: none;
       border-radius: 5px;
       transition: background-color 0.3s;
     }
 
     .contact a:hover {
-      background-color: #1e40af;
+      background-color: #009ACD;
     }
 
     footer {
       text-align: center;
       padding: 20px;
-      background-color: #1e40af;
-      color: white;
+      background-color: #111;
+      color: #ccc;
     }
   </style>
 </head>
 <body>
 
-  <!-- Header Section -->
+  <!-- Header with profile image background -->
   <header>
-    <h1>Trisha Nabata</h1>
-    <p>Web Developer | Designer | Tech Enthusiast</p>
+    <div>
+      <h1>Trisha Nabata</h1>
+      <p>Web Developer | Designer | Tech Enthusiast</p>
+    </div>
   </header>
 
   <!-- Navigation -->
