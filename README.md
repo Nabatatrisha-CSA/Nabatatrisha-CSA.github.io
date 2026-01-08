@@ -1,25 +1,4 @@
-# Nabatatrisha-CSA.github.io
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Trisha Nabata Portfolio</title>
-<link rel="stylesheet" href="style.css">
-<style>
-  body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f0f4f8; color:#1e3a8a; }
-  header { background:#2563eb; color:white; text-align:center; padding:40px 20px; }
-  h1 { margin:0; }
-  section { padding:20px; max-width:800px; margin:auto; }
-  ul { list-style:none; padding:0; }
-  li { margin:10px 0; }
-  a { color:#2563eb; text-decoration:none; }
-  a:hover { text-decoration:underline; }
-  .skills img { margin:5px; }
-</style>
-</head>
-<body>
-
+o# Nabatatrisha-CSA.github.io
 <header>
   <h1>👋 Hi, I'm Trisha Nabata</h1>
   <p>BSIT Student | Frontend Developer | HTML, CSS, JavaScript, Python</p>
