@@ -28,7 +28,8 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: transparent url('https://i.ibb.co/2y0vVtQ/stars.png') repeat;
+      background: transparent url('![17678601312932164055196463125051](https://github.com/user-attachments/assets/bb6ed41f-9bcc-470c-a47a-6f6868e21fb8)
+') repeat;
       z-index: -1;
       animation: moveStars 200s linear infinite;
     }
