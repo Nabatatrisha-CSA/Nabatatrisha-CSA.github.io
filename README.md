@@ -15,12 +15,11 @@
     }
 
     body {
-      background: radial-gradient(ellipse at bottom, #0b0c27 0%, #000 100%);
       color: #fff;
       overflow-x: hidden;
     }
 
-    /* Stars animation background */
+    /* Starry background using a direct online image */
     body::before {
       content: '';
       position: fixed;
@@ -28,8 +27,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: transparent url('![17678601312932164055196463125051](https://github.com/user-attachments/assets/bb6ed41f-9bcc-470c-a47a-6f6868e21fb8)
-') repeat;
+      background: url('https://i.ibb.co/2y0vVtQ/stars.png') repeat;
       z-index: -1;
       animation: moveStars 200s linear infinite;
     }
@@ -48,7 +46,7 @@
 
     header h1 {
       font-size: 3rem;
-      color: #ff6ec7; /* Galaxy pink/purple */
+      color: #ff6ec7;
       text-shadow: 0 0 10px #ff6ec7, 0 0 20px #8a2be2;
       margin-bottom: 10px;
     }
@@ -135,7 +133,6 @@
       color: #ccc;
       text-shadow: 0 0 5px #fff;
     }
-
   </style>
 </head>
 <body>
