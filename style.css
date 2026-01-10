@@ -19,7 +19,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: img src ('https://uploads.onecompiler.io/44a5xg7vk/44a5ys2tk/download%20(1).jpeg') repeat;
+  background: URL ('https://uploads.onecompiler.io/44a5xg7vk/44a5ys2tk/download%20(1).jpeg') repeat;
   z-index: -1;
   animation: moveStars 200s linear infinite;
 }
